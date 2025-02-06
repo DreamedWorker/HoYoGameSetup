@@ -44,7 +44,7 @@ compose.desktop {
 
         buildTypes.release.proguard {
             version = "7.5.0"
-            isEnabled = true
+            isEnabled = false
         }
 
         nativeDistributions {

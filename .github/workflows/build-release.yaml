@@ -33,11 +33,11 @@ jobs:
           server-id: github # 必须配置才能使用 Oracle JDK
           oracle-license: agree # 自动接受 Oracle 许可协议
 
-      - name: Configure arch
-        run: |
-          # 设置架构相关环境变量
-          echo "TARGET_ARCH=${{ matrix.arch }}" >> $GITHUB_ENV
-          echo "JAVA_HOME_${matrix.arch}_X64=$JAVA_HOME" >> $GITHUB_ENV
+#      - name: Configure arch
+#        run: |
+#          # 设置架构相关环境变量
+#          echo "TARGET_ARCH=${{ matrix.arch }}" >> $GITHUB_ENV
+#          echo "JAVA_HOME_${matrix.arch}_X64=$JAVA_HOME" >> $GITHUB_ENV
 
       - name: Make gradlew executable
         run: chmod +x gradlew
@@ -55,9 +55,9 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew packageReleaseDmg -PtargetArch=${{ matrix.arch }}
-        env:
-          CI: true
-          JAVA_OPTS: "-Dos.arch=${{ matrix.arch }}"
+#        env:
+#          CI: true
+#          JAVA_OPTS: "-Dos.arch=${{ matrix.arch }}"
 
       - name: Archive DMG
         uses: actions/upload-artifact@v4

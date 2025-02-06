@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_window_title">HoYoGameSetup</string>
+    <string name="app_ok">OK</string>
+    <string name="app_warning">Warning</string>
+
+    <string-array name="gameType_list">
+        <item>Genshin Impact (China Mainland)</item>
+        <item>Genshin Impact (Overseas)</item>
+        <item>Zenless Zone Zero (China Mainland)</item>
+        <item>Zenless Zone Zero (Overseas)</item>
+    </string-array>
+    <string name="gameType_gi_cn">Genshin Impact (China Mainland)</string>
+    <string name="gameType_gi_os">Genshin Impact (Overseas)</string>
+    <string name="gameType_zzz_cn">Zenless Zone Zero (China Mainland)</string>
+    <string name="gameType_zzz_os">Zenless Zone Zero (Overseas)</string>
+
+    <!--  主页部分  -->
+    <string name="home_menu_about">About</string>
+    <string name="home_menu_update">Check for updates</string>
+    <string name="home_title">Welcome to use HoYoGameSetup</string>
+    <string name="home_subtitle">By following the tips below, you can quickly install playable games on your Mac.</string>
+    <string name="home_label_step">Installation steps</string>
+    <string name="home_startTask">Start to install</string>
+    <string name="gameSelector_action_title">Game to be installed</string>
+    <string name="gameSelector_supporting">Click on the right to view installable games and servers.</string>
+    <string name="pathSelector_action_title">Path of game data</string>
+    <string name="pathSelector_supporting">Click to select a new path or the path of existing game data.</string>
+    <string name="pathSelector_tip">If there is YuanShen.exe or ZenlessZoneZero.exe in the selected directory, we will use these data directly, otherwise we will create a HoYoGamePacks folder under the directory to store the data.</string>
+    <string name="log_tip">The log generated during installation will be displayed here. Slide the mouse wheel up and down to view all the logs.</string>
+    <string name="home_error_noPath">You haven't selected the installation directory of the game data yet!</string>
+
+    <!--  全新安装部分  -->
+    <string name="brand_label">Installation task - %1$s</string>
+    <string name="brand_title">You can take a break while we perform the installation task.</string>
+    <string name="brand_task_writeApp">Write the executable file to the folder「/Application」</string>
+    <string name="brand_task_fetchInfo">Get the current game version and downloadable information</string>
+    <string name="brand_task_downloadFiles">Download game data file fragments</string>
+    <string name="brand_task_merge">Unzip and merge packets</string>
+    <string name="brand_state_waiting">Waiting for...</string>
+    <string name="brand_state_ongoing">In progress...</string>
+    <string name="brand_state_finished">Completed</string>
+    <string name="brand_state_failed">Error(s) occurred.</string>
+    <string name="brand_cancel">Cancel task</string>
+
+    <!--  已有数据部分  -->
+    <string name="exists_processBat">Process startup parameters</string>
+
+    <!--  完工部分  -->
+    <string name="all_done">Be brought to a successful completion!</string>
+    <string name="all_done_open">Open the game</string>
+    <string name="all_done_close">Close this app</string>
+
+    <!--  关于我们部分  -->
+    <string name="about_version">Version: 0.0.1</string>
+    <string name="about_license">Open source license</string>
+    <string name="about_tip">This software is open source software, developed for the purpose of non-profit, learning computer software development knowledge, and does not include any guarantee. Your download, installation, use of this software and its copies are all voluntary.</string>
+</resources>

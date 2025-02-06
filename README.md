@@ -1,4 +1,7 @@
-# 米游设置器 (HoYoGameSetup)
+<div align="center">
+<img src="https://github.com/DreamedWorker/HoYoGameSetup/blob/main/AppIcon.jpg" alt="tb logo" width=72 height=72 />
+<h1>米游设置器 (HoYoGameSetup)</h1>
+</div>
 
 HoYoGameSetup is a software based on [WineSkin](https://github.com/Gcenx/WineskinServer). You can quickly install Genshin Impact/Zenless Zone Zero to your Mac through this project.
 

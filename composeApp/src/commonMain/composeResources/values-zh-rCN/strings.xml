@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_window_title">米游设置器</string>
+    <string name="app_ok">好</string>
+    <string name="app_warning">警告</string>
+
+    <string-array name="gameType_list">
+        <item>原神国服</item>
+        <item>原神国际服</item>
+        <item>绝区零国服</item>
+        <item>绝区零国际服</item>
+    </string-array>
+    <string name="gameType_gi_cn">原神国服</string>
+    <string name="gameType_gi_os">原神国际服</string>
+    <string name="gameType_zzz_cn">绝区零国服</string>
+    <string name="gameType_zzz_os">绝区零国际服</string>
+
+    <!--  主页部分  -->
+    <string name="home_menu_about">关于</string>
+    <string name="home_menu_update">检查更新</string>
+    <string name="home_title">欢迎使用米游设置器</string>
+    <string name="home_subtitle">遵循下面的提示，你就能快速地在 Mac 上安装可游玩的游戏。</string>
+    <string name="home_label_step">安装步骤</string>
+    <string name="home_startTask">开始安装</string>
+    <string name="gameSelector_action_title">要安装的游戏</string>
+    <string name="gameSelector_supporting">点按右侧查看可安装的游戏和服务器</string>
+    <string name="pathSelector_action_title">游戏数据的安装位置</string>
+    <string name="pathSelector_supporting">点按以选择新路径或已存在的游戏数据的路径</string>
+    <string name="pathSelector_tip">如果选定的目录存在YuanShen.exe或者ZenlessZoneZero.exe，我们将直接使用这些数据，否则我们将在该目录下创建HoYoGamePacks文件夹用于存放数据。</string>
+    <string name="log_tip">安装时产生的日志将会显示在此处，上下滑动鼠标滚轮以查看全部日志。</string>
+    <string name="home_error_noPath">你还未选择游戏数据的安装目录！</string>
+
+    <!--  全新安装部分  -->
+    <string name="brand_label">安装任务 - %1$s</string>
+    <string name="brand_title">在我们执行安装任务时你可以稍作休息。</string>
+    <string name="brand_task_writeApp">将可执行文件写入 /Application 文件夹</string>
+    <string name="brand_task_fetchInfo">获取当前的游戏版本和可下载信息</string>
+    <string name="brand_task_downloadFiles">下载游戏数据文件分片</string>
+    <string name="brand_task_merge">解压并合并数据包</string>
+    <string name="brand_state_waiting">正在等待...</string>
+    <string name="brand_state_ongoing">正在进行...</string>
+    <string name="brand_state_finished">已完成</string>
+    <string name="brand_state_failed">出现错误</string>
+    <string name="brand_cancel">取消任务</string>
+
+    <!--  已有数据部分  -->
+    <string name="exists_processBat">处理启动参数</string>
+
+    <!--  完工部分  -->
+    <string name="all_done">大功告成</string>
+    <string name="all_done_open">打开游戏</string>
+    <string name="all_done_close">关闭应用</string>
+
+    <!--  关于我们部分  -->
+    <string name="about_version">Version: 0.0.1</string>
+    <string name="about_license">开放源代码许可</string>
+    <string name="about_tip">本软件系开源软件，以非营利、学习计算机软件开发知识为目的开发，不含任何担保。你的下载、安装、使用本软件及其副本等的行为均系你的自愿行为。</string>
+</resources>

@@ -64,8 +64,8 @@ jobs:
         with:
           name: release-${{ matrix.arch }}
           path: |
-            build/compose/binaries/main/dmg/*.dmg
-            build/libs/*.dmg
+            build/compose/binaries/main-release/dmg/*.dmg
+            #build/libs/*.dmg
 
   release:
     name: Create Release

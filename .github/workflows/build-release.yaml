@@ -63,9 +63,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-${{ matrix.arch }}
-          path: |
-            build/compose/binaries/main/dmg/*.dmg
-            build/libs/*.dmg
+          path: /Users/runner/work/HoYoGameSetup/HoYoGameSetup/composeApp/build/compose/binaries/main-release/dmg/*.dmg
 
   release:
     name: Create Release
@@ -88,7 +86,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: "v$(date +%s)"
+          tag_name: "1.0.0"
           name: "Multi-arch Build $(date +'%Y-%m-%d')"
           body: |
             Auto-generated multi-architecture build:

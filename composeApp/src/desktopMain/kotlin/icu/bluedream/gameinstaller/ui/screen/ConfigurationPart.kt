@@ -145,7 +145,7 @@ fun ConfigurationPart(
                     if (files == null) {
                         changeUI(UiParts.INSTALL_BRAND_NEW, state)
                     } else {
-                        if (files.contains("Yuan") || files.contains("Zen")) {
+                        if (files.contains("YuanShen.exe") || files.contains("ZenlessZoneZero.exe")) {
                             changeUI(UiParts.DATA_ALREADY_EXISTS, state)
                         } else {
                             changeUI(UiParts.INSTALL_BRAND_NEW, state)
@@ -222,7 +222,7 @@ class ConfigurationPartViewModel : ViewModel() {
     private fun checkDir(path: String): String {
         if (path.isBlank()) return ""
         val files = File(path).list() ?: return "${path}/HoYoGamePacks/"
-        return if (files.contains("YuanShen") || files.contains("Zen")) {
+        return if (files.contains("YuanShen.exe") || files.contains("ZenlessZoneZero.exe")) {
             "${path}/"
         } else {
             "${path}/HoYoGamePacks/"

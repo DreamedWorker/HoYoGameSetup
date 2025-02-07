@@ -41,7 +41,7 @@ fun AboutUs() {
                 modifier = Modifier.clickable {
                     if (Desktop.isDesktopSupported()) {
                         Desktop.getDesktop()
-                            .browse(URI.create("https://github.com/DreamedWorker/YuanShen_launcher_mac_porting/blob/nightly/LICENSE"))
+                            .browse(URI.create("https://github.com/DreamedWorker/HoYoGameSetup/blob/main/LICENSE"))
                     }
                 }
             )

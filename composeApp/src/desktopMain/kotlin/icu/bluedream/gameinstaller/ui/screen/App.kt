@@ -51,7 +51,7 @@ fun App() {
                                         text = { Text(stringResource(Res.string.home_menu_update)) },
                                         onClick = {
                                             if (Desktop.isDesktopSupported()) {
-                                                Desktop.getDesktop().browse(URI.create("https://github.com/DreamedWorker/YuanShen_launcher_mac_porting"))
+                                                Desktop.getDesktop().browse(URI.create("https://github.com/DreamedWorker/HoYoGameSetup"))
                                             }
                                         },
                                         leadingIcon = { Icon(Icons.Default.Update, null) }

@@ -41,10 +41,19 @@ compose.desktop {
     application {
         mainClass = "icu.bluedream.gameinstaller.MainKt"
 
+        buildTypes.release.proguard {
+            isEnabled = false
+        }
+
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "icu.bluedream.gameinstaller"
+            targetFormats(TargetFormat.Dmg)
+            packageName = "HoYoGameSetup"
             packageVersion = "1.0.0"
+            copyright = "Copyright © YuanShine 2025-present."
+
+            macOS {
+                iconFile.set(file("src/AppIcon.icns"))
+            }
         }
     }
 }

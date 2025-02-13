@@ -39,6 +39,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing its ID to get its outputs object, which include a `upload_url`
-          asset_path: ./build/appname.dmg
-          asset_name: appname-0.0.1.dmg
+          asset_path: /Users/runner/work/HoYoGameSetup/HoYoGameSetup/composeApp/build/compose/binaries/main-release/dmg/HoYoGameSetup-1.0.0.dmg
+          asset_name: HoYoGameSetup-1.0.0.dmg
           asset_content_type: application/x-apple-diskimage

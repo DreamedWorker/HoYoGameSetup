@@ -1,0 +1,44 @@
+name: Create and Release DMG
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  build-and-release:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v1
+        with:
+          java-version: '21'
+
+      - name: Build with Gradle
+        run: ./gradlew packageReleaseDmg
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: '0.0.1' # 指定的版本标签
+          release_name: 'Release 0.0.1'
+          draft: false
+          prerelease: false
+
+      - name: Upload DMG to Release
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing its ID to get its outputs object, which include a `upload_url`
+          asset_path: ./build/appname.dmg
+          asset_name: appname-0.0.1.dmg
+          asset_content_type: application/x-apple-diskimage

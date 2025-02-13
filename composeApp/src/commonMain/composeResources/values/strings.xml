@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_name">HoYoGameSetup</string>
+    <string name="app_error">Error occurred!</string>
+    <string name="app_ok">OK</string>
+
+    <string-array name="game_types">
+        <item>Genshin Impact (China Mainland)</item>
+        <item>Genshin Impact (Overseas)</item>
+        <item>Zenless Zone Zero (China Mainland)</item>
+        <item>Zenless Zone Zero (Overseas)</item>
+    </string-array>
+    <string name="g1">Genshin Impact (China Mainland)</string>
+    <string name="g2">Genshin Impact (Overseas)</string>
+    <string name="g3">Zenless Zone Zero (China Mainland)</string>
+    <string name="g4">Zenless Zone Zero (Overseas)</string>
+
+    <string name="about_title">About us</string>
+    <string name="about_version">Version: 1.0.0</string>
+    <string name="about_license">Open source license</string>
+    <string name="about_delete_caches">Clear all caches</string>
+    <string name="about_release">Check for updates...</string>
+
+    <string name="home_title">Welcome to use HoYoGameSetup</string>
+    <string name="home_exp">After the following simple steps, you can quickly install the "Hoyoverse" game on your Mac.</string>
+    <string name="home_steps">Installation steps</string>
+    <string name="home_select_game">Select the game and server you want to install</string>
+    <string name="home_select_path">Select the storage location of the game data file</string>
+    <string name="home_select_path_tip">You can select the empty directory to reinstall, or you can choose the existing data to use directly.</string>
+    <string name="home_select_do">Start the installation</string>
+    <string name="home_select_tip">Choose a directory that does not require additional permissions or the directory where the game executable file is located.</string>
+    <string name="home_menu_cache_clear">Empty the cache partly</string>
+    <string name="home_menu_about">About</string>
+
+    <string name="brand_title">Brand-new installation</string>
+    <string name="brand_tip">We will download the complete copy of the game to the directory you selected.</string>
+    <string name="brand_state_waiting">Waiting</string>
+    <string name="brand_state_ongoing">Ongoing</string>
+    <string name="brand_state_finished">Finished</string>
+    <string name="brand_state_failed">Failed</string>
+    <string name="brand_step_fetch_game_pack_info">Get the information of the game package</string>
+    <string name="brand_step_download_prepared_pack">Download and unpack the pre-compiled program package</string>
+    <string name="brand_step_download_game_packs">Download game data</string>
+    <string name="brand_step_merge_data">Rewrite the startup parameters</string>
+    <string name="brand_have_a_break">You can take a break while we are installing, which will last for a while.</string>
+
+    <string name="exists_title">Continue to use</string>
+    <string name="exists_tip">We will directly use the existing data packets.</string>
+
+    <string name="done_title">Be brought to a successful completion</string>
+    <string name="done_exp">Now, you can continue your two-dimensional journey!</string>
+    <string name="done_open">Open your game</string>
+    <string name="done_close">Close this app</string>
+</resources>

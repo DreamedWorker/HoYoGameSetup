@@ -15,6 +15,12 @@
     <string name="g3">绝区零国服</string>
     <string name="g4">绝区零国际服</string>
 
+    <string name="about_title">关于我们</string>
+    <string name="about_version">Version: 1.0.0</string>
+    <string name="about_license">开放源代码许可</string>
+    <string name="about_delete_caches">清空全部缓存</string>
+    <string name="about_release">检查更新</string>
+
     <string name="home_title">欢迎使用米游设置器</string>
     <string name="home_exp">经过以下几个简单的步骤，你就可以快速地将「米家」游戏安装到你的 Mac 上了。</string>
     <string name="home_steps">安装步骤</string>
@@ -23,6 +29,8 @@
     <string name="home_select_path_tip">你可以选择空目录来重新安装，也可以选择已有数据直接使用。</string>
     <string name="home_select_do">开始安装</string>
     <string name="home_select_tip">选择一个无需额外权限的目录或游戏可执行文件所在的目录。</string>
+    <string name="home_menu_cache_clear">清空部分缓存</string>
+    <string name="home_menu_about">关于</string>
 
     <string name="brand_title">全新安装</string>
     <string name="brand_tip">我们将会将完整的游戏副本下载到你选择的目录下</string>

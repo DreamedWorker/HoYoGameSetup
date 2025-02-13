@@ -4,9 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Gamepad
-import androidx.compose.material.icons.filled.MoreVert
-import androidx.compose.material.icons.filled.Storage
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -52,12 +50,24 @@ class HomeView : Screen {
                         }
                         DropdownMenu(showMoreAction, { showMoreAction = false }){
                             DropdownMenuItem(
-                                text = { Text("清空缓存") },
+                                text = { Text(stringResource(Res.string.home_menu_cache_clear)) },
+                                leadingIcon = {
+                                    Icon(Icons.Default.Cached, null)
+                                },
                                 onClick = {
-                                    with(File(SelfStorage.getCacheFolder())) {
+                                    with(File(SelfStorage.getCacheFileFolder())) {
                                         println(deleteRecursively())
                                         mkdirs()
                                     }
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(Res.string.home_menu_about)) },
+                                onClick = {
+                                    navigator.push(AboutView())
+                                },
+                                leadingIcon = {
+                                    Icon(Icons.Default.AccountBalance, null)
                                 }
                             )
                         }

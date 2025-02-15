@@ -12,6 +12,10 @@ A GUI way that helps you install HoYo games to your Mac.
 Although you can install and open this app on macOS 14.4 and lower. 
 But in fact, you can't enjoy the results brought by this software, which is meaningless.
 
+## What are in it
+- Encapsulated wine environment ([WineSkin](https://github.com/Gcenx/WineskinServer)) that can be used immediately after installation;
+- DXMT as a graphic translation layer.
+
 ## How to use
 
 - Download the installation package (.dmg file) from the repository of this project and drag it to the application folder;

@@ -20,6 +20,7 @@
     <string name="about_license">Open source license</string>
     <string name="about_delete_caches">Clear all caches</string>
     <string name="about_release">Check for updates...</string>
+    <string name="about_importance">This software is an open source software that complies with the GNU GPLv3.0 license and does not contain any guarantee. Your download, installation, use and other behaviors are voluntary. You need to be fully responsible for the consequences of account blocking caused by the use of third-party client(s).</string>
 
     <string name="home_title">Welcome to use HoYoGameSetup</string>
     <string name="home_exp">After the following simple steps, you can quickly install the "Hoyoverse" game on your Mac.</string>

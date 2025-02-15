@@ -9,10 +9,10 @@ plugins {
 
 kotlin {
     jvm("desktop")
-    
+
     sourceSets {
         val desktopMain by getting
-        
+
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -22,16 +22,16 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
-            implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.voyager.navigator)
+            implementation(libs.voyager.screenModel)
+            implementation(libs.icons.jetbrains)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
             implementation(libs.filekit)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.icons.jetbrains)
             implementation("com.squareup.okhttp3:okhttp:4.12.0")
+            implementation(libs.kotlinx.serialization.json)
         }
     }
 }
@@ -39,7 +39,7 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "icu.bluedream.gameinstaller.MainKt"
+        mainClass = "icu.bluedream.gamesteup.MainKt"
 
         buildTypes.release.proguard {
             isEnabled = false

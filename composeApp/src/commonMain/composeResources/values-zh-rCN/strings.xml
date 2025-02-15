@@ -20,6 +20,7 @@
     <string name="about_license">开放源代码许可</string>
     <string name="about_delete_caches">清空全部缓存</string>
     <string name="about_release">检查更新</string>
+    <string name="about_importance">本软件系遵守 GNU GPLv3.0 协议的开源软件，不含任何担保，你的下载、安装、使用等行为均系自愿。对于因为使用第三方客户端导致的封号后果，你需要自行完全承担。</string>
 
     <string name="home_title">欢迎使用米游设置器</string>
     <string name="home_exp">经过以下几个简单的步骤，你就可以快速地将「米家」游戏安装到你的 Mac 上了。</string>
